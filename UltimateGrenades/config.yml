@@ -1,0 +1,20 @@
+grenades:
+  egg:
+    radius: 3
+    grenade-effect: 
+    - fake-explosion
+    - fake-lightning
+  snowball:
+    radius: 3
+    grenade-effect: 
+    - confusion
+    - blindness
+    confusion-duration: 10
+    blindness-duration: 10
+  enderpearl:
+    radius: 4
+    grenade-effect: 
+    - real-explosion
+    - fake-lightning
+    - confusion
+    confusion-duration: 10
