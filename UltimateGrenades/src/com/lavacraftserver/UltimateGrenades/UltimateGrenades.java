@@ -33,11 +33,13 @@ public class UltimateGrenades extends JavaPlugin implements Listener {
 		getServer().getPluginManager().registerEvents(new EnderpearlListener(this), this);
 		getServer().getPluginManager().registerEvents(new SnowballListener(this), this);
 		getCommand("grenade").setExecutor(new GrenadeCommand());
+		
+		getLogger().info("UltimateGrenades by np98765 and MrBluebear3 has been enabled!");
 	}
 	
 	@Override
 	public void onDisable() {
-		getLogger().info("UltimateGrenades has been disabled.");
+		getLogger().info("UltimateGrenades by np98765 and MrBluebear3 has been disabled!");
 	}
 	
 }
