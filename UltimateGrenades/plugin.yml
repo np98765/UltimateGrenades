@@ -1,7 +1,7 @@
 name: UltimateGrenades
 main: com.lavacraftserver.UltimateGrenades.UltimateGrenades
 version: 1.2
-author: np98765
+authors: [np98765, MrBluebear3]
 commands:
   grenade:
     usage: /<command> [grenade-type]
