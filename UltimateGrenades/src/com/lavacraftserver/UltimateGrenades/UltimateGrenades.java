@@ -9,7 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class UltimateGrenades extends JavaPlugin implements Listener {
 	
-	public FileConfiguration config = null;
+	public static FileConfiguration config = null;
 	private File configFile = null; 
 	
 	@Override
@@ -32,6 +32,7 @@ public class UltimateGrenades extends JavaPlugin implements Listener {
 		getServer().getPluginManager().registerEvents(new EggListener(this), this);
 		getServer().getPluginManager().registerEvents(new EnderpearlListener(this), this);
 		getServer().getPluginManager().registerEvents(new SnowballListener(this), this);
+		getServer().getPluginManager().registerEvents(new LogoutListener(), this);
 		getCommand("grenade").setExecutor(new GrenadeCommand());
 		
 		getLogger().info("UltimateGrenades by np98765 and MrBluebear3 has been enabled!");
